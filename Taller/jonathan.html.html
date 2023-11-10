@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>Lista de Tareas</title>
+</head>
+<body>
+    <div class="login-form">
+        <h1>Iniciar Sesión</h1>
+        <input type="text" id="username" placeholder="Nombre de Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button onclick="login()">Iniciar Sesión</button>
+        <div id="welcome-message" style="display: none;"></div>
+    </div>
+
+    <div class="task-list" style="display: none;">
+        <h2>Lista de Tareas</h2>
+        <input type="text" id="task" placeholder="Nueva Tarea">
+        <button onclick="addTask()">Agregar Tarea</button>
+        <div>
+            <label for="filter">Filtrar Tareas:</label>
+            <select id="filter" onchange="filterTasks()">
+                <option value="all">Todas</option>
+                <option value="completed">Completadas</option>
+                <option value="pending">Pendientes</option>
+            </select>
+        </div>
+        <ul id="task-ul"></ul>
+        <button onclick="logout()">Cerrar Sesión</button>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>

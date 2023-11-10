@@ -1,0 +1,54 @@
+.login-form, .task-list {
+    margin: 200px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #555;
+}
+
+/* Aplica un fondo morado claro al cuerpo de la página */
+body {
+    background-color: #e6e6e6;
+    text-align: center;
+}
+
+/* Establece el tipo de fuente Copperplate Gothic para todo el contenido del formulario */
+form {
+    font-family: 'Copperplate Gothic', sans-serif;
+}
+
+/* Establece un fondo blanco con 40% de transparencia para los campos de entrada (input) */
+input {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+/* Establece el botón de "Iniciar Sesión" de color vinito con borde */
+button {
+    background-color: #800020; /* Color vinito */
+    border: 1px solid #800020; /* Borde */
+    color: white; /* Texto blanco */
+}
+
+/* Aplica letras de color blanco en todo el formulario */
+form, input {
+    color: black;
+}
+button {
+    color: white;
+}
